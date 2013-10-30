@@ -20,7 +20,7 @@
 </div> 
      -->
 <div class="event">
-    <h1>Adams Day Care</h1>
+    <h1>Mid Lin Day Care</h1>
     <img src="http://btckstorage.blob.core.windows.net/site2373/Pics/RBS%201.jpg" />
     
  
@@ -32,7 +32,7 @@
     <h1>News.</h1>
 <div class ="post">
      <div class ="post_title">
-         <h1>Lorem Ipsum</h1>
+         <h1>Lorem Ipsum!</h1>
          <p>24/10/2013</p>
      </div>
      <div class ="post_image">
