@@ -20,7 +20,7 @@
 </div> 
      -->
 <div class="event">
-    <h1>Mid-Lin Mega Day Care</h1>
+    <h1>Adams Day Care</h1>
     <img src="http://btckstorage.blob.core.windows.net/site2373/Pics/RBS%201.jpg" />
     
  
