@@ -1,0 +1,109 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Mid-Lin Day Care</title>
+    <link href="content/StyleSheet.css" rel="stylesheet" type="text/css"/>
+    <!--[if IE 6]>
+    <link href="content/IE6StyleSheet.css" rel="stylesheet" type="text/css"/>
+    <![endif]-->
+    <!--[if IE 7]>
+    Special instructions for IE 6 here
+    <![endif]-->
+    <!--[if IE 8]>
+    Special instructions for IE 6 here
+    <![endif]-->
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+
+
+
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script type="text/javascript">
+    $(document).on("scroll", function () {
+        if ($(document).scrollTop() > 50) {
+            $("header").removeClass("large").addClass("small");
+            $(".loginPanel").removeClass("large").addClass("small");
+        } else {
+            $("header").removeClass("small").addClass("large");
+            $(".loginPanel").removeClass("small").addClass("large");
+        }
+    });
+
+    
+</script>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+
+        <header>
+             
+            <nav>
+                <ul>
+                    <li><a runat="server" href="~/">Home</a></li>
+				    <li><a runat="server" href="About/About.aspx">About</a></li>
+                    <li><a runat="server" href="News/News.aspx">News</a></li>
+				    <li><a runat="server" href="~/Activities.aspx">Activities</a></li>
+				    <li><a runat="server" href="Contact/Contact.aspx">Contact</a></li>
+                </ul> 
+
+            </nav>
+            
+            <div class ="loginControls">
+                   
+
+        
+
+
+            </div>
+            <div class ="loginPanel">
+                <p>login</p>
+                <p>password</p>
+            </div>
+     
+        </header>
+        <div class="container">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+            <hr />
+            
+        </div>
+
+
+        <div class="wrapper">
+        <div class="content_holder">
+             
+            
+           
+                <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+
+            
+            
+           
+        </div>
+            <footer>
+                    <ul>
+                        <li><a runat="server" href="~/">Home</a></li>
+				        <li><a runat="server" href="~/About">About</a></li>
+                        <li><a runat="server" href="~/News">News</a></li>
+				        <li><a runat="server" href="~/Activities">Activities</a></li>
+                        <li><a runat="server" href="~/Fundrasing">Fundrasing</a></li>
+                        <li><a runat="server" href="~/Links">Links</a></li>
+                        <li><a runat="server" href="~/Vacancies">Vacancies</a></li>
+                        <li><a runat="server" href="~/Guestbook">GuestBook</a></li>
+				        <li><a runat="server" href="~/Contact">Contact</a></li>
+                    </ul>
+                <p>Mid-lin Day Care 2013</p>
+            </footer>
+        </div>
+        
+
+    </div>
+    </form>
+</body>
+</html>
