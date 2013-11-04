@@ -5,6 +5,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" Runat="Server">
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+    <div class="content_holder">
     <h1>About Us</h1>
     <div class="about">
         Mid - Lin Day Care started life as Mid Craigie Parish Project in 1994, housed in Mid Craigie Parish Church of Scotland and administered in partnership with St. Ninian's Scottish Episcopal Church, Linlathen Community Association and St. Vincent's R.C. Church.<br />
@@ -22,7 +23,7 @@
 </div>
     
 <br />
-
+        </div>
  
 
 
