@@ -19,33 +19,39 @@
      </div>
 </div> 
      -->
+<div class="content_holder">
 <div class="event">
-    <h1>Mid Lin Day Care</h1>
+    <h1>Recent images</h1>
     <img src="http://btckstorage.blob.core.windows.net/site2373/Pics/RBS%201.jpg" />
     
- 
-    <h1>Our sponsers</h1>
-    <img src="http://upload.wikimedia.org/wikipedia/commons/c/ce/Example_image.png" />
+    <img src="http://btckstorage.blob.core.windows.net/site2373/Pics/VF%20Award.JPG" />
+    <h2>View our Gallery</h2>
+    
     
 </div>
 <div class ="front">
-    <h1>News.</h1>
-<div class ="post">
-     <div class ="post_title">
-         <h1>Lorem Ipsum!</h1>
+    <h1>Latest news</h1>
+
+
+<div class ="front_post">
+     <div class ="title">
+         <h1>Welcome Tim</h1>
          <p>24/10/2013</p>
      </div>
-     <div class ="post_image">
-         <img src="http://upload.wikimedia.org/wikipedia/commons/c/ce/Example_image.png" />
-     </div>
-     <div class ="post_content">
-         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer id metus neque. Quisque eget leo auctor, ultricies ligula sit amet, sodales quam. Donec libero lectus, rutrum ut placerat sit amet, hendrerit vel augue. Morbi lacinia mauris vel eleifend consectetur. Aliquam sodales, risus ac ornare volutpat, neque ligula tempus dolor, eget consectetur ipsum turpis vel lectus. In hac habitasse platea dictumst. Quisque consequat neque non lectus viverra, ac dapibus dui varius. Pellentesque feugiat magna nec lacus dictum sagittis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Integer iaculis sagittis felis non pulvinar. Sed commodo placerat suscipit. Ut vestibulum vel dolor nec bibendum.
-     </div>
-    <div class ="post_author">
+
+    <div class="front_image">
+
+      <img src="http://btckstorage.blob.core.windows.net/site2373/Pics/Mid-Lin%203.JPG" alt="" />
+      
+      <h2>We were delighted to attend an Award ceremony today at City Chambers where the Lord Provost, Bob Duncan presented Mid - Lin representatives with a VOLUNTEER FRIENDLY AWARD FOR April 2012 - April 2015</h2>
+
+</div>
+     
+    <div class ="author">
         <p>Author: Tom Riddle</p>
     </div>
 </div>
      </div>
-
+</div>
 </asp:Content>
 

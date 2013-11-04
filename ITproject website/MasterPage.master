@@ -24,13 +24,17 @@
 <script src="http://code.jquery.com/jquery-latest.js"></script>
 <script type="text/javascript">
     $(document).on("scroll", function () {
-        if ($(document).scrollTop() > 50) {
+        if ($(document).scrollTop() > 40) {
             $("header").removeClass("large").addClass("small");
             $(".loginPanel").removeClass("large").addClass("small");
+            $(".content_holder").removeClass("large").addClass("small");
+        
         } else {
             $("header").removeClass("small").addClass("large");
             $(".loginPanel").removeClass("small").addClass("large");
+            $(".content_holder").removeClass("small").addClass("large");
         }
+
     });
 
     
@@ -48,23 +52,15 @@
 				    <li><a runat="server" href="About/About.aspx">About</a></li>
                     <li><a runat="server" href="News/News.aspx">News</a></li>
 				    <li><a runat="server" href="~/Activities.aspx">Activities</a></li>
+                    <li><a runat="server" href="~/Vacancies">Vacancies</a></li>
 				    <li><a runat="server" href="Contact/Contact.aspx">Contact</a></li>
                 </ul> 
 
             </nav>
             
             <div class ="loginControls">
-                   
-
-        
-
-
+               <a runat="server" href="admin/login.aspx">Login</a>
             </div>
-            <div class ="loginPanel">
-                <p>login</p>
-                <p>password</p>
-            </div>
-     
         </header>
         <div class="container">
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
@@ -73,20 +69,20 @@
             
         </div>
 
-
+       
         <div class="wrapper">
-        <div class="content_holder">
+            
+        
              
+                 
             
            
                 <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
                 </asp:ContentPlaceHolder>
 
             
-            
-           
-        </div>
-            <footer>
+            <div class="article_sub">
+           <footer>
                     <ul>
                         <li><a runat="server" href="~/">Home</a></li>
 				        <li><a runat="server" href="~/About">About</a></li>
@@ -101,8 +97,10 @@
                 <p>Mid-lin Day Care 2013</p>
             </footer>
         </div>
+           </div>
         
-
+        
+         
     </div>
     </form>
 </body>
