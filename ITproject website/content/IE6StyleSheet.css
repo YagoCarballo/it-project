@@ -1,3 +1,311 @@
-﻿body {
-    background-color:#222;
+﻿// ---- COLOR SCHEME ----
+// light blue: #82D2FF
+// dark blue: #0096FF
+// orange: #FF964B
+
+*{
+	font-family: 'PT Sans', sans-serif;
 }
+
+body {
+    background-color:#fafafa;
+    font-family: 'PT Sans', sans-serif;
+}
+
+header {
+	width: 100%;
+	background-color: #FFF;
+	position: fixed;
+	top: 0px;
+	height: 70px;
+	display: inline-block;
+	background-image: url('../img/logo.jpg');
+	background-position: 4% 1%;
+	background-repeat: no-repeat;
+	background-size: contain;
+	border: 2px solid #FFF;
+	overflow: hidden;
+}
+
+header ul {
+	font-size: 110%;
+	margin: 0;
+	color: #0096FF;
+	text-decoration: none;
+	list-style-type: none;
+	margin-top: 30px;
+	text-align: left;
+}
+
+header ul li a {
+	text-decoration: none;
+	color: #0096FF;
+	margin-left: 150px;
+}
+
+.Header_navigation a{
+	padding: 3px 12px;
+	text-decoration: none;
+	color: #0096FF;
+	font-size: 1.1em;
+	display: inline;
+}
+
+ul .navigation {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+li {
+	display: inline;
+	text-align: center;
+}
+
+.navi {
+	margin-left: 15%;
+	text-align: center;
+	width: 60%;
+	display: inline-block;
+	float: left;
+}
+
+.login_control {
+	position: fixed;
+	display: block;
+	float: right;
+}
+
+.loginControls {
+	top: 0;
+	right: 0;
+	position: fixed;
+	background-color: #0096FF;
+	padding: 5px;
+}
+
+.loginControls a {
+	text-decoration: none;
+	color: #fff;
+}
+
+.loginPanel {
+	width: 400px;
+	height: 70px;
+	background-color: #0096ff;
+	top: 0;
+	right: 0;
+	position: absolute;
+	display: inline;
+}
+
+.loginPanel p {
+	color: #fff;
+	padding: 10px;
+	font-family: 'PT Sans', sans-serif;
+}
+
+.wrapper {
+	width: 900px;
+	padding-top: 160px;
+	background-color: #fff;
+	padding-bottom: 50px;
+	margin: 0 auto;
+}
+
+.content_holder {
+	font-family: 'PT Sans', sans-serif;
+	padding: 10px;
+}
+
+.content_holder h1 {
+	font-size: 150%;
+}
+
+.content_holder p {
+	font-size: 100%;
+}
+
+
+footer {
+	background-color: #F6F6F6;
+	width: 900px;
+	border-top: thick solid #0096FF;
+	height: 40px;
+	font-family 'PT Sans', sans-serif;
+}
+
+footer ul {
+	text-align: center;
+}
+
+footer ul li a {
+	text-decoration: none;
+	color: #0096FF;
+	margin-left: 3px;
+	font-family: 'PT Sans', sans-serif;
+}
+
+footer p {
+	color: #6F6E6E;
+	font-size: 120%;
+	text-align: center;
+	font-family: 'PT Sans', sans-serif;
+}
+
+
+.front {
+	width: 450px;
+}
+
+.front img {
+	width: 250px;
+}
+
+.event h1 {
+	padding-top: 10px;
+	margin-bottom: -10px;
+}
+
+.event {
+	width: 380px;
+	background-color: #FFF;
+	float: right;
+	height: 100%;
+	border-left: 2px solid #0096FF;
+	padding-left: 20px;
+}
+
+.event img {
+	width: 100%;
+	padding-top: 10px;
+}
+
+.event p {
+	font-size: 80%;
+}
+
+
+.post {
+	border-bottom: 2px solid #0096FF;
+	padding-bottom: 5px;
+	padding-top: 10px;
+}
+
+.post_title {
+	height: 60px;
+}
+
+.post_title h1 {
+	text-align: left;
+	float: left;
+	height: 100px;
+	color: #0096FF;
+	font-size: 250%;
+}
+
+.post_title p {
+	text-align: right;
+	color: #0096FF;
+	font-size: 160%;
+}
+
+.post_image {
+	float: left;
+	width: 300px;
+	margin-left: -170px;
+	padding: 20px;
+}
+
+.post_image img {
+	width: 300px;
+	margin: 0 auto;
+}
+
+.post_content {
+	margin-top: 250px;
+	line-height: 1.3em;
+}
+
+.post_author {
+	text-align: right;
+	color: #0096FF;
+	font-size: 150%;
+	padding-top: 15px;
+}
+
+
+.contact {
+	padding-bottom: 20px;
+}
+
+.contact p {
+	list-style-type: square;
+	font-size: 80%;
+}
+
+
+.about {
+	padding-bottom: 20px;
+}
+
+.about ul li {
+	list-style-type: square;
+	font-size: 60%;
+}
+
+.about img {
+	width: 500px;
+	margin-left: 150px;
+}
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
