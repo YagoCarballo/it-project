@@ -45,7 +45,7 @@
       
       <h2>We were delighted to attend an Award ceremony today at City Chambers where the Lord Provost, Bob Duncan presented Mid - Lin representatives with a VOLUNTEER FRIENDLY AWARD FOR April 2012 - April 2015</h2>
 
-</div>
+    </div>
      
     <div class ="author">
         <p>Author: Tom Riddle</p>

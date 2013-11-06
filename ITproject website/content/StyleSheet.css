@@ -61,41 +61,6 @@ header a:hover {
 }
 
 
-
-
-
-/* Sizes for the bigger menu */
-header.large{ height: 130px;
-              
-}
-header.large ul{
-    text-align:center;
-}
-header.large li{
-    margin-left: 10px;
-}
-/* Sizes for the smaller menu */
-header.small{ height: 70px; 
-              background-image:url('../img/logo_small.jpg');
-              background-position:4% 1%; 
-
-}
-header.small img{height: 50px; margin-top: -10px;margin-top:5px; }
-    header.small ul {
-        margin-top: 30px;
-        margin-left: 150px;
-        text-align:left;
-    }
-    header.small li {
-        margin-left: 10px;
-    }
-
-
-section.stretch{ float: left; height: 1500px; width: 100%; }
-
-section.stretch p{ font-size: 30px; color: #969696; text-align: center; position: relative; margin-top: 250px; }
-section.stretch p.bottom{ top: 100%; } 
-
 header,nav, a, img, li{
   transition: all 0.4s;
   -moz-transition: all 0.4s;
@@ -139,12 +104,7 @@ text-align:center;
     float:left;
 
 }
-.login_control{
-    position:fixed;
-    display:block;
-    float:right;
-    
-}
+
 /*end of header*/
 
 /* login control
@@ -201,8 +161,7 @@ text-align:center;
 /*main content*/
 .wrapper {
 width:900px;
-padding-bottom:20px;
-min-height:900px;
+
    
    
 margin:0px auto;
@@ -213,8 +172,11 @@ margin:0px auto;
 .content_holder {
    font-family: 'PT Sans', sans-serif;
   background-color:#fff;
-  margin-top:140px;
+  margin-top:70px;
+  padding:17px;
    box-shadow:0px 0px 10px rgba(0,0,0,0.2);
+   min-height:600px;
+   margin-bottom:15px;
 }
 
 .article_sub{
@@ -224,18 +186,6 @@ margin:0px auto;
    box-shadow:0px 0px 10px rgba(0,0,0,0.2);
 }
 
-.content_holder.large {
-   font-family: 'PT Sans', sans-serif;
-  background-color:#fff;
-  margin-top:140px;
-   box-shadow:0px 0px 10px rgba(0,0,0,0.2);
-}
-.content_holder.small {
-   font-family: 'PT Sans', sans-serif;
-  background-color:#fff;
-  margin-top:180px;
-   box-shadow:0px 0px 10px rgba(0,0,0,0.2);
-}
 .content_holder h1{
     font-size:2em;
 }
@@ -248,97 +198,49 @@ margin:0px auto;
 
 
 footer{
-    
-    background-color:#f6f6f6;
+    margin-top:20px;
+    height:90px;
+    font-family: 'PT Sans', sans-serif;
+    text-align:center;
     width:900px;
-    border-top:2px solid #0096FF;
-    height:40px;
-    font-family: 'PT Sans', sans-serif;
-
-
-    
+margin:0px auto;
+background-color: #fff;
+box-shadow:0px 0px 10px rgba(0,0,0,0.2);
+}
+footer img ul il
+{
+    padding: 20px;
 }
 
-footer ul li a{
-    text-decoration:none;
-    color: #0096FF;
-    margin-left:3px;
-    font-family: 'PT Sans', sans-serif;
-}
-footer p{
-   color: #6f6e6e;
-   font-size:1.2em;
-   text-align:center;
-   font-family: 'PT Sans', sans-serif;
-}
 
 /*front page*/
-.news_banner
-{
-    margin: 0 auto;
-    max-width:850px;
-    height:100px;
-    padding-top:120px;
-    padding-left:25px;
-    padding-right:25px;
-    background-color:#fff;
-    margin-top:10px;
-    margin-bottom:20px;
-    box-shadow:0px 0px 15px rgba(0,0,0,0.2);
 
-}
-.news_banner.large
-{
-    max-width:900px;
-    height:100px;
-    padding-top:120px;
-    padding-left:25px;
-    padding-right:25px;
-background: -moz-linear-gradient(top,  rgba(209,209,209,1) 0%, rgba(233,233,233,1) 53%, rgba(255,255,255,0) 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(209,209,209,1)), color-stop(53%,rgba(233,233,233,1)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(top,  rgba(209,209,209,1) 0%,rgba(233,233,233,1) 53%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(top,  rgba(209,209,209,1) 0%,rgba(233,233,233,1) 53%,rgba(255,255,255,0) 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(top,  rgba(209,209,209,1) 0%,rgba(233,233,233,1) 53%,rgba(255,255,255,0) 100%); /* IE10+ */
-background: linear-gradient(to bottom,  rgba(209,209,209,1) 0%,rgba(233,233,233,1) 53%,rgba(255,255,255,0) 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d1d1d1', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
-
-}
-.news_banner.small
-{
-    max-width:900px;
-    height:100px;
-    padding-top:160px;
-    padding-left:25px;
-background: -moz-linear-gradient(top,  rgba(209,209,209,1) 0%, rgba(233,233,233,1) 53%, rgba(255,255,255,0) 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(209,209,209,1)), color-stop(53%,rgba(233,233,233,1)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(top,  rgba(209,209,209,1) 0%,rgba(233,233,233,1) 53%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(top,  rgba(209,209,209,1) 0%,rgba(233,233,233,1) 53%,rgba(255,255,255,0) 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(top,  rgba(209,209,209,1) 0%,rgba(233,233,233,1) 53%,rgba(255,255,255,0) 100%); /* IE10+ */
-background: linear-gradient(to bottom,  rgba(209,209,209,1) 0%,rgba(233,233,233,1) 53%,rgba(255,255,255,0) 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d1d1d1', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
-
-}
-.news_banner a
-{
-    color:#0096FF;
-    font-size:1.2em;
-    display:block;
-    text-align:left;
-    font-family: 'PT Sans', sans-serif;
+.front{
+    width:600px;
+    
     
 }
-.news_banner ul li
+.front h1
 {
-    list-style-type:none;
-
-}
-.front{
-    width:640px;
-    padding:20px;
+    font-size:2.4em;
 }
 .front .title{
     color:#0096FF;
 }
+.front_post h1{
+    margin-top:5px;
+    font-size:1.8em;
+    padding-left:20px;
+    float:left;
+}
+.front p
+{
+    padding-top:10px;
+    font-size:1.5em;
+    padding-right:20px;
+    float:right;
+}
+
 .front_image
 {
     width: 100%;
@@ -349,23 +251,27 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d1d1d1', end
     position: relative; 
 }
 .front_image h2{
-    
     position: absolute; 
-   bottom: 0px; 
+   bottom: 0; 
    color:#fff;
    left: 0; 
    height:70px;
    padding:20px;
    max-width: 100%; 
    overflow:hidden;
-background-color:rgb
+   background-color:rgba(0,0,0,0.5);
 
 
 
 }
+
+.front_post
+{
+    box-shadow:0px 0px 15px rgba(0,0,0,0.2);
+}
+
 .front_post_content {
     position: absolute; 
-   top: 200px; 
    left: 0; 
    width: 100%; 
 
@@ -482,6 +388,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000096ff', e
 .post_content
 {
     margin-top:20px;
+    padding:20px;
     line-height: 1.3em;
 }
 .post_author

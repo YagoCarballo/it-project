@@ -64,8 +64,11 @@
                 </asp:ContentPlaceHolder>
 
             
-            <div class="article_sub">
-           <footer>
+           
+           
+        <footer>
+               <img src ="../img/logo_small.jpg" height="40" alt="Mid Lin Logo"/>
+               <p>Mid-lin Day Care 2013</p>
                     <ul>
                         <li><a runat="server" href="~/">Home</a></li>
 				        <li><a runat="server" href="~/About">About</a></li>
@@ -77,14 +80,12 @@
                         <li><a runat="server" href="~/Guestbook">GuestBook</a></li>
 				        <li><a runat="server" href="~/Contact">Contact</a></li>
                     </ul>
-                <p>Mid-lin Day Care 2013</p>
+                
             </footer>
-        </div>
-           </div>
-        
         
          
     </div>
+        </div>
     </form>
 </body>
 </html>
