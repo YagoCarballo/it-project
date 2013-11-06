@@ -21,24 +21,7 @@
 
 
 
-<script src="http://code.jquery.com/jquery-latest.js"></script>
-<script type="text/javascript">
-    $(document).on("scroll", function () {
-        if ($(document).scrollTop() > 40) {
-            $("header").removeClass("large").addClass("small");
-            $(".loginPanel").removeClass("large").addClass("small");
-            $(".content_holder").removeClass("large").addClass("small");
-        
-        } else {
-            $("header").removeClass("small").addClass("large");
-            $(".loginPanel").removeClass("small").addClass("large");
-            $(".content_holder").removeClass("small").addClass("large");
-        }
 
-    });
-
-    
-</script>
 </head>
 <body>
     <form id="form1" runat="server">

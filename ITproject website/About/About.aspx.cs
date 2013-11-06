@@ -11,4 +11,10 @@ public partial class About_About : System.Web.UI.Page
     {
 
     }
+    protected override void OnPreRender(EventArgs e)
+    {
+        base.OnPreRender(e);
+        this.lblTitle.Text = "Text changed in OnPreRender event";
+
+    }
 }
