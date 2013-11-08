@@ -7,8 +7,11 @@ using System.Web.UI.WebControls;
 
 public partial class admin_MasterPage : System.Web.UI.MasterPage
 {
-    protected void Page_Load(object sender, EventArgs e)
-    {
-
+    bool loggedIn = true;
+    protected void Page_Init(object sender, EventArgs e)
+    { 
+        if (!loggedIn) {
+            Response.Redirect("~/admin/Login.aspx", true);
+        }
     }
 }

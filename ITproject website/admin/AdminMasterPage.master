@@ -11,7 +11,7 @@
 	<script src="./code/code.js" type="text/javascript"> </script>
 </head>
 <body>
-	<div id="wrapper">
+	<div id="wrapper" runat="server">
 		<aside id="sidebar">
 			<img src="http://arlia.computing.dundee.ac.uk/2013-ac22003/ac213u1/img/logo.jpg" alt="logo"></img>
 			<ul>
