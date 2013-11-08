@@ -1,0 +1,145 @@
+﻿* {
+	margin: 0;
+/*	font-family: 'Oswald', sans-serif;*/
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+}
+
+html, body {
+	height: 100%;
+	background-color: #F2F2F2;
+}
+
+#wrapper {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -20px; /* the bottom margin is the negative value of the footer's height */
+}
+
+footer, .push {
+	height: 20px;
+	text-align: center;
+}
+
+#sidebar {
+	position: absolute;
+	float: left;
+	left: 0px;
+	width: 20%;
+	height: 100%;
+	background-color: #0D98F7;
+	box-shadow:0px 0px 5px rgba(0,0,0,0.2);
+}
+
+#sidebar img {
+	width: 95%;
+	box-shadow:0px 0px 5px rgba(0,0,0,0.2);
+}
+
+#sidebar ul {
+	list-style: none;
+	padding-left: 1.5em;
+}
+
+#sidebar ul li {
+	padding-top: 10px;
+}
+
+#sidebar ul li :hover {
+	color: white;
+	background-color: rgb(6, 90, 218);
+	padding: 0.4em;
+	
+	transition: all 0.4s;
+	-moz-transition: all 0.4s;
+	-webkit-transition: all 0.4s;
+	-o-transition: all 0.4s;
+}
+
+#sidebar ul li .selected {
+	color: white;
+	background-color: rgb(6, 90, 218);
+	padding-left: 0.4em;
+	padding-right: 0.4em;
+}
+
+#sidebar ul li a {
+	text-decoration: none;
+	color: white;
+/*	font-weight: bold;*/
+}
+
+#content {
+	position: absolute;
+	float: left;
+	top: 1.0em;
+	left: 20.6%;
+	width: 75%;
+	background-color: white;
+	padding: 1.0em;
+	box-shadow:0px 0px 5px rgba(0,0,0,0.2);
+}
+
+#actions-menu ul {
+	list-style: none;
+}
+
+#actions-menu ul li {
+	float: left;
+	padding-right: 1.5em;
+}
+
+#actions-menu ul li .selected {
+	color: #0D98F7;
+	
+	color: white;
+	background-color: rgb(6, 90, 218);
+	padding-left: 0.4em;
+	padding-right: 0.4em;
+}
+
+#actions-menu ul li a {
+	text-decoration: none;
+	color: #0D98F7;
+}
+
+#actions-menu ul li :hover {
+	text-decoration: none;
+	color: white;
+	background-color: rgb(6, 90, 218);
+	padding: 0.4em;
+	
+	transition: all 0.4s;
+	-moz-transition: all 0.4s;
+	-webkit-transition: all 0.4s;
+	-o-transition: all 0.4s;
+}
+
+.action-box {
+	display: block;
+	padding-top: 1.0em;
+}
+
+.action-box table {
+	width: 90%;
+}
+
+.action-box table .input {
+	width: 90%;
+	height: 2em;
+}
+
+.action-box table .field_name {
+	width: 30%;
+}
+
+.table-header td {
+	font-weight: 800;
+}
+
+.table-row:hover td {
+	color: white;
+	background-color: rgb(6, 90, 218);
+	cursor: pointer;
+}
