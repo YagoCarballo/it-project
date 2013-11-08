@@ -29,28 +29,22 @@
     
     
 </div>
-<div class ="front">
-    <h1>Latest news</h1>
+    <div class ="front">
+        <h1>Latest news</h1>
+            <div class ="front_post">
+			    <div class="front_image">
+				    <img src="http://btckstorage.blob.core.windows.net/site2373/Pics/Mid-Lin%203.JPG" alt="" />
+				    <p>We were delighted to attend an Award ceremony today at City Chambers where the Lord Provost, Bob Duncan presented Mid - Lin representatives with a VOLUNTEER FRIENDLY AWARD FOR April 2012 - April 2015</p>
+				
+			    </div>
+			
+				     <h2>Welcome Tim                     24/10/2013</p>
+			
+			     <p>Author: Tom Riddle</p>
+			    </div>
+		    </div>
 
 
-<div class ="front_post">
-     <div class ="title">
-         <h1>Welcome Tim</h1>
-         <p>24/10/2013</p>
-     </div>
-
-    <div class="front_image">
-
-      <img src="http://btckstorage.blob.core.windows.net/site2373/Pics/Mid-Lin%203.JPG" alt="" />
-      
-      <h2>We were delighted to attend an Award ceremony today at City Chambers where the Lord Provost, Bob Duncan presented Mid - Lin representatives with a VOLUNTEER FRIENDLY AWARD FOR April 2012 - April 2015</h2>
-
-    </div>
-     
-    <div class ="author">
-        <p>Author: Tom Riddle</p>
-    </div>
-</div>
      </div>
 </div>
 </asp:Content>
