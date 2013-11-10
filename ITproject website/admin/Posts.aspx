@@ -2,10 +2,9 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" Runat="Server">
 <aside id="actions-menu">
     <ul>
-        <li><a href="#" id="add-user-button" onclick="showAddUserBox();">Add / Modify User</a></li>
-        <li><a href="#" id="remove-user-button" onclick="showRemoveUserBox();">Remove User</a></li>
-        <li><a href="#" id="password-user-button" onclick="showPasswordUserBox();">Change User's Password</a></li>
-        <li><a href="#" id="display-user-button" onclick="showDisplayUserBox();" class="selected">Display Users</a></li>
+        <li><a href="#" id="add-post-button" onclick="showAddPostBox();">Add / Modify Post</a></li>
+        <li><a href="#" id="remove-post-button" onclick="showRemovePostBox();">Remove Post</a></li>
+        <li><a href="#" id="display-post-button" onclick="showDisplayPostBox();" class="selected">Display Posts</a></li>
     </ul>
 </aside>
 <br />
