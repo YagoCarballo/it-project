@@ -15,8 +15,8 @@
 		<aside id="sidebar">
 			<img src="http://arlia.computing.dundee.ac.uk/2013-ac22003/ac213u1/img/logo.jpg" alt="logo"></img>
 			<ul>
-				<li><a href="Users.aspx" class="selected">Users</a></li>
-				<li><a href="#">Posts</a></li>
+				<li><a href="Users.aspx">Users</a></li>
+				<li><a href="Posts.aspx">Posts</a></li>
 				<li><a href="#">Pages</a></li>
 				<li><a href="#">Comments</a></li>
 				<li><a href="#">Sponsors</a></li>
