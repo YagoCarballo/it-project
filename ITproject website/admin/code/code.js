@@ -46,3 +46,12 @@ function showDisplayUserBox() {
 
     this.changeView(["addUsersBox", "removeUsersBox", "displayUsersBox", "passwordUserBox"], "displayUsersBox");
 }
+
+function showDisplayPostsBox() {
+    this.changeClass("add-post-button", "");
+    this.changeClass("remove-post-button", "");
+    this.changeClass("password-post-button", "");
+    this.changeClass("display-post-button", "selected");
+
+    this.changeView(["addPostsBox", "removePostsBox", "displayPostsBox", "passwordPostBox"], "displayPostsBox");
+}
