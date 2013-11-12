@@ -50,8 +50,22 @@ function showDisplayUserBox() {
 function showDisplayPostsBox() {
     this.changeClass("add-post-button", "");
     this.changeClass("remove-post-button", "");
-    this.changeClass("password-post-button", "");
     this.changeClass("display-post-button", "selected");
 
     this.changeView(["addPostsBox", "removePostsBox", "displayPostsBox", "passwordPostBox"], "displayPostsBox");
+}
+
+function showRemovePostsBox() {
+	this.changeClass("add-post-button", "");
+        this.changeClass("remove-post-button", "selected");
+        this.changeClass("display-post-button", "");
+	this.changeView(["addPostsBox", "removePostsBox", "displayPostsBox", "passwordPostBox"], "removePostsBox");
+}
+
+function showAddPostsBox() {
+	this.changeClass("add-post-button", "selected");
+        this.changeClass("remove-post-button", "");
+        this.changeClass("display-post-button", "");
+
+	this.changeView(["addPostsBox", "removePostsBox", "displayPostsBox", "passwordPostBox"], "addPostsBox");
 }
