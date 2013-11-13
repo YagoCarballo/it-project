@@ -19,4 +19,4 @@ Essentially, it's a simple version of the popular platform Wordpress.
 Stuart Douglas  
 Yago Carballo  
 Jose Salvatierra  
-Adam Findla
+Adam Findlay
