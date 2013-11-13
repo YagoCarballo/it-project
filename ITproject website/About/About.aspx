@@ -8,11 +8,17 @@
     <div class="content_holder">
 
         <div id = "page">
-            <asp:Label ID="title" runat="server"></asp:Label>
-            <asp:Panel ID="pagePanel" runat="server">
-                <asp:Literal ID="content" runat="server"></asp:Literal>
-            </asp:Panel>
-            <i><asp:Label ID="author" runat="server"></asp:Label></i>
+            <div id ="page_title">
+                <asp:Label ID="title" runat="server"></asp:Label>
+            </div>
+            <div id ="page_content">
+                <asp:Panel ID="pagePanel" runat="server">
+                    <asp:Literal ID="content" runat="server"></asp:Literal>
+                </asp:Panel>
+            </div>
+            <div id ="page_author">
+                <i><asp:Label ID="author" runat="server"></asp:Label></i>
+            </div>
         </div>
     </div>
 </asp:Content>

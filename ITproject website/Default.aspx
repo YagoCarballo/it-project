@@ -39,7 +39,26 @@
 			    </div>
 			
 				     <h2>Welcome Tim                     24/10/2013</p>
-			
+			<SCRIPT LANGUAGE="JavaScript">
+<!--
+
+			    function changeFontSize(element, step) {
+			        step = parseInt(step, 10);
+			        var el = document.getElementById(element);
+			        var curFont = parseInt(el.style.fontSize, 10);
+			        el.style.fontSize = (curFont + step) + 'px';
+			    }
+
+//   -->
+</script>
+	<a href="javascript:void(0);" onclick="changeFontSize('content','2');">Increase font</a>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<a href="javascript:void(0);" onclick="changeFontSize('content',-2);">Decrease font</a>
+<br /><br />
+<p id="content" style="font-size:12px;"><br /><br />
+	This is the test text to increase or decrease.
+</p>
+
 			     <p>Author: Tom Riddle</p>
 			    </div>
 		    </div>

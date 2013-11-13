@@ -219,10 +219,9 @@ text-align:center;
 
 /*main content*/
 .wrapper {
-width:900px;
+width:800px;
+max-width:800px;
 
-   
-   
 margin:0px auto;
 
 
@@ -231,10 +230,10 @@ margin:0px auto;
 .content_holder {
    font-family: 'PT Sans', sans-serif;
   background-color:#fff;
-  margin-top:70px;
-  padding:17px;
+  margin-top:100px;
+  
    box-shadow:0px 0px 10px rgba(0,0,0,0.2);
-   min-height:600px;
+   min-height:200px;
    margin-bottom:15px;
 }
 
@@ -252,18 +251,21 @@ margin:0px auto;
 
 
 footer{
-    margin-top:20px;
+    margin-top:30px;
     height:90px;
     font-family: 'PT Sans', sans-serif;
     text-align:center;
-    width:900px;
+    position:relative;
+    bottom:0;
+    width:800px;
+    max-width:800px;
 margin:0px auto;
-background-color: #fff;
-box-shadow:0px 0px 10px rgba(0,0,0,0.2);
+
 }
 footer img ul il
 {
     padding: 20px;
+    text-align:center;
 }
 
 
@@ -276,7 +278,8 @@ footer img ul il
 }
 .front_post img
 {
-	width:100%;
+	width:800px;
+    max-width:800px;
 }
 .front_image p{
 	bottom:0;
@@ -309,7 +312,6 @@ footer img ul il
 }
 .event
 {
-    margin-top:47px;
     padding:20px;
     
     right:0;
@@ -330,15 +332,6 @@ footer img ul il
 {
     width:100%;
     padding-bottom:10px;
-   
-        
-background: -moz-linear-gradient(left,  rgba(0,150,255,0) 0%, rgba(0,150,255,0) 4%, rgba(0,150,255,1) 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(0,150,255,0)), color-stop(4%,rgba(0,150,255,0)), color-stop(100%,rgba(0,150,255,1))); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(left,  rgba(0,150,255,0) 0%,rgba(0,150,255,0) 4%,rgba(0,150,255,1) 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(left,  rgba(0,150,255,0) 0%,rgba(0,150,255,0) 4%,rgba(0,150,255,1) 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(left,  rgba(0,150,255,0) 0%,rgba(0,150,255,0) 4%,rgba(0,150,255,1) 100%); /* IE10+ */
-background: linear-gradient(to right,  rgba(0,150,255,0) 0%,rgba(0,150,255,0) 4%,rgba(0,150,255,1) 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000096ff', endColorstr='#0096ff',GradientType=1 ); /* IE6-9 */
 }
 
 
@@ -420,5 +413,129 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000096ff', e
     width:500px;
     margin-left:150px;
 }
+
+
+#front_image
+{
+    overflow:hidden;
+    height:400px;
+    
+}
+#front_image_text 
+{
+    width:780px;
+    max-width:780px;
+    max-height:60px;
+    overflow:hidden;
+   bottom:0;
+   background-color:rgba(0,0,0,0.5);
+	margin-top:-80px;
+	padding:10px;
+	z-index:99;
+	position:relative;
+	color:#fff;
+}
+#postcode
+{
+    text-align:right;
+    width:200px;
+    max-width:200px;
+    float:right;
+    position:relative;
+    margin-top:-50px;
+    color:rgba(0,0,0,0.9);
+}
+#other
+{
+    min-width:500px;
+    max-width:500px;
+   font-align:left;
+   margin-top:10px;
+   line-height: 1;
+    
+}
+#other
+{
+    min-width:550px;
+    max-width:550px;
+    line-height: 1;
+
+    
+}
+.page
+{
+    
+}
+
+#page_title
+{
+    max-height:50px;
+    max-width:800px;
+    background-color:#fff;
+    color:#0096FF;
+    font-size:1.9em;
+    padding:20px;
+}
+#page_content
+{
+    border-top:thick solid #0096FF;
+}
+#page_content p
+{
+    min-height:200px;
+    
+    padding:20px;
+}
+#page_author
+{
+    min-height:100px;
+    max-width:800px;
+    background-color:#fff;
+    color:#000;
+    padding:10px;
+    
+}
+
+
+
+
+
+#carousel {
+        width: 800px;
+        max-width: 800px;
+        overflow:hidden;
+        background-color:#000;
+    }
+
+    #carousel ul {
+        width: 800px;
+        padding: 0;
+        margin: 0;
+    }
+
+    #carousel ul li {
+        width: 800px;
+        text-align: center;
+        height: 100%;
+        list-style: none;
+        float:  left;
+    }
+
+
+
+    .fontsize
+    {
+        max-width:100px;
+        height:35px;
+        position:fixed;
+        right: 0;
+        bottom: 0;
+        background-color:rgba(0,150,255,0.5);
+
+    }
+    .fontsize img
+    {
+        width:25px;
+    }
 
 
