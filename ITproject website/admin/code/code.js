@@ -59,7 +59,7 @@ function showRemovePostBox() {
 	this.changeClass("add-post-button", "");
         this.changeClass("remove-post-button", "selected");
         this.changeClass("display-post-button", "");
-	this.changeView(["addPostBox", "removePostBox", "displayPostsBox"], "removePostsBox");
+	this.changeView(["addPostBox", "removePostBox", "displayPostsBox"], "removePostBox");
 }
 
 function showAddPostBox() {
@@ -67,7 +67,7 @@ function showAddPostBox() {
         this.changeClass("remove-post-button", "");
         this.changeClass("display-post-button", "");
 
-	this.changeView(["addPostBox", "removePostBox", "displayPostsBox"], "addPostsBox");
+	this.changeView(["addPostBox", "removePostBox", "displayPostsBox"], "addPostBox");
 }
 
 function showDisplayPagesBox() {
