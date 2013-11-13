@@ -8,9 +8,11 @@
     <div class="content_holder">
 
         <div id = "page">
-            <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+            <asp:Label ID="title" runat="server"></asp:Label>
             <asp:Panel ID="pagePanel" runat="server">
-            </asp:Panel>       
+                <asp:Literal ID="content" runat="server"></asp:Literal>
+            </asp:Panel>
+            <i><asp:Label ID="author" runat="server"></asp:Label></i>
         </div>
     </div>
 </asp:Content>
