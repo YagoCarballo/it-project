@@ -30,7 +30,25 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+    -moz-animation: pulse 30s infinite alternate;
+    -webkit-animation: pulse 40s infinite alternate;
+    background-color: #82D2FF; 
 }
+@-webkit-keyframes pulse { 0% {background-color: #82D2FF;} 100% {background-color: #0096FF;} }
+@-moz-keyframes pulse {
+    0% {
+        background-color: #82D2FF;
+    }
+
+    100% {
+        background-color: #0096FF;
+        
+    }
+}}
+
+
+
+
 ol, ul {
 	list-style: none;
 }
@@ -505,6 +523,10 @@ footer img ul il
         max-width: 800px;
         overflow:hidden;
         background-color:#000;
+        transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -webkit-transition: all 0.4s;                        
+  -o-transition: all 0.4s; 
     }
 
     #carousel ul {
