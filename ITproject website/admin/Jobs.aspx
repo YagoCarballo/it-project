@@ -1,46 +1,46 @@
-<%@ Page Title="" Language="C#" MasterPageFile="~/admin/AdminMasterPage.master" AutoEventWireup="true" CodeFile="Posts.aspx.cs" Inherits="admin_Default" %>
+<%@ Page Title="" Language="C#" MasterPageFile="~/admin/AdminMasterPage.master" AutoEventWireup="true" CodeFile="Jobs.aspx.cs" Inherits="admin_Default" %>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" Runat="Server">
 <aside id="actions-menu">
     <ul>
-        <li><a href="#" id="add-post-button" onclick="showAddPostBox();">Add / Modify Post</a></li>
-        <li><a href="#" id="remove-post-button" onclick="showRemovePostBox();">Remove Post</a></li>
-        <li><a href="#" id="display-post-button" onclick="showDisplayPostsBox();" class="selected">Display Posts</a></li>
+        <li><a href="#" id="add-job-button" onclick="showAddJobBox();">Add / Modify Job</a></li>
+        <li><a href="#" id="remove-job-button" onclick="showRemoveJobBox();">Remove Job</a></li>
+        <li><a href="#" id="display-job-button" onclick="showDisplayJobsBox();" class="selected">Display Jobs</a></li>
     </ul>
 </aside>
 <br />
 
-<article id="addPostBox" class="action-box" style="display: none; visibility: hidden;">
+<article id="addJobBox" class="action-box" style="display: none; visibility: hidden;">
     <form>
         <table>
             <tr>
-                <td colspan="2" style="text-align: left; color: rgb(6, 90, 218); font-weight: 700;">Select the Post to Modify</td>
+                <td colspan="2" style="text-align: left; color: rgb(6, 90, 218); font-weight: 700;">Select the Job to Modify</td>
             </tr>
             <tr style="height: 0.5em;"></tr>
             <tr>
-                <td class="field_name"><b>Post to Modify: </b></td>
+                <td class="field_name"><b>Job to Modify: </b></td>
                 <td>
                     <select class="input">
-                        <option value="admin">admin</option>
+                        <option value="Sample Job">Sample Job</option>
                     </select>
                 </td>
             </tr>
             <tr style="height: 2.5em;"></tr>
             <tr>
-                <td colspan="2" style="text-align: left; color: rgb(6, 90, 218); font-weight: 700;">Or Fill the Data for the new Post</td>
+                <td colspan="2" style="text-align: left; color: rgb(6, 90, 218); font-weight: 700;">Or Fill the Data for the new Job</td>
             </tr>
             <tr style="height: 0.5em;"></tr>
             <tr>
-                <td class="field_name"><b>Title: </b></td>
+                <td class="field_name"><b>Job name: </b></td>
                 <td>
                     <input type="text" class="input"></input></td>
             </tr>
             <tr>
-                <td class="field_name"><b>Content: </b></td>
+                <td class="field_name"><b>Job description: </b></td>
                 <td>
                     <textarea>Your content here.</textarea></td>
             </tr>
 	    <tr>
-		<td class="field_name"><b>Category: </b></td>
+		<td class="field_name"><b>Number of vacancies: </b></td>
 		<td>
 		    <input type="text" class="input"></input></td>
 	    </tr>
@@ -57,14 +57,14 @@
         <br />
     </form>
 </article>
-<article id="removePostBox" class="action-box" style="display: none; visibility: hidden;">
+<article id="removeJobBox" class="action-box" style="display: none; visibility: hidden;">
     <form>
         <table>
             <tr>
-                <td class="field_name"><b>Post to Remove: </b></td>
+                <td class="field_name"><b>Job to Remove: </b></td>
                 <td>
                     <select class="input">
-                        <option value="admin">admin</option>
+                        <option value="Sample Job">Sample Job</option>
                     </select>
                 </td>
             </tr>
@@ -79,17 +79,17 @@
         <br />
     </form>
 </article>
-<article id="displayPostsBox" class="action-box" style="display: block;">
+<article id="displayJobsBox" class="action-box" style="display: block;">
     <table>
         <tr class="table-header">
-            <td>Title</td>
-            <td>Excerpt</td>
-            <td>Category</td>
+            <td>Job title</td>
+            <td>Job description</td>
+	    <td>Number of vacancies</td>
 	</tr>
         <tr class="table-row">
-            <td>Sample post</td>
-            <td>An excerpt of up to 50 words...</td>
-            <td>Uncategorized</td>
+            <td>Sample job</td>
+            <td>Job Description...</td>
+	    <td>3</td>
 	</tr>
     </table>
 </article>
