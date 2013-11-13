@@ -92,3 +92,26 @@ function showAddPagesBox() {
 
         this.changeView(["addPageBox", "removePageBox", "displayPagesBox"], "addPageBox");
 }
+
+function showDisplayEventsBox() {
+    this.changeClass("add-event-button", "");
+    this.changeClass("remove-event-button", "");
+    this.changeClass("display-events-button", "selected");
+
+    this.changeView(["addEventBox", "removeEventBox", "displayEventsBox"], "displayEventsBox");
+}
+
+function showRemoveEventBox() {
+    this.changeClass("add-event-button", "");
+    this.changeClass("remove-event-button", "selected");
+    this.changeClass("display-events-button", "");
+    this.changeView(["addEventBox", "removeEventBox", "displayEventsBox"], "removeEventBox");
+}
+
+function showAddEventBox() {
+    this.changeClass("add-event-button", "selected");
+    this.changeClass("remove-event-button", "");
+    this.changeClass("display-events-button", "");
+
+    this.changeView(["addEventBox", "removeEventBox", "displayEventsBox"], "addEventBox");
+}
