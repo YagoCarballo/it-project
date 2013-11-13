@@ -16,7 +16,7 @@ Essentially, it's a simple version of the popular platform Wordpress.
 
 ## Contributors
 
-Stuart Douglas
-Yago Carballo
-Jose Salvatierra
-Adam Findlay
+Stuart Douglas  
+Yago Carballo  
+Jose Salvatierra  
+Adam Findla
