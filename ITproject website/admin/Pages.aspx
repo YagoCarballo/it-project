@@ -1,23 +1,23 @@
-<%@ Page Title="" Language="C#" MasterPageFile="~/admin/AdminMasterPage.master" AutoEventWireup="true" CodeFile="Posts.aspx.cs" Inherits="admin_Default" %>
+<%@ Page Title="" Language="C#" MasterPageFile="~/admin/AdminMasterPage.master" AutoEventWireup="true" CodeFile="Pages.aspx.cs" Inherits="admin_Default" %>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" Runat="Server">
 <aside id="actions-menu">
     <ul>
-        <li><a href="#" id="add-post-button" onclick="showAddPostBox();">Add / Modify Post</a></li>
-        <li><a href="#" id="remove-post-button" onclick="showRemovePostBox();">Remove Post</a></li>
-        <li><a href="#" id="display-post-button" onclick="showDisplayPostBox();" class="selected">Display Posts</a></li>
+        <li><a href="#" id="add-page-button" onclick="showAddPagesBox();">Add / Modify Page</a></li>
+        <li><a href="#" id="remove-page-button" onclick="showRemovePagesBox();">Remove Page</a></li>
+        <li><a href="#" id="display-page-button" onclick="showDisplayPagesBox();" class="selected">Display Pages</a></li>
     </ul>
 </aside>
 <br />
 
-<article id="addPostBox" class="action-box" style="display: none; visibility: hidden;">
+<article id="addPageBox" class="action-box" style="display: none; visibility: hidden;">
     <form>
         <table>
             <tr>
-                <td colspan="2" style="text-align: left; color: rgb(6, 90, 218); font-weight: 700;">Select the Post to Modify</td>
+                <td colspan="2" style="text-align: left; color: rgb(6, 90, 218); font-weight: 700;">Select the Page to Modify</td>
             </tr>
             <tr style="height: 0.5em;"></tr>
             <tr>
-                <td class="field_name"><b>Post to Modify: </b></td>
+                <td class="field_name"><b>Page to Modify: </b></td>
                 <td>
                     <select class="input">
                         <option value="admin">admin</option>
@@ -26,7 +26,7 @@
             </tr>
             <tr style="height: 2.5em;"></tr>
             <tr>
-                <td colspan="2" style="text-align: left; color: rgb(6, 90, 218); font-weight: 700;">Or Fill the Data for the new Post</td>
+                <td colspan="2" style="text-align: left; color: rgb(6, 90, 218); font-weight: 700;">Or Fill the Data for the new Page</td>
             </tr>
             <tr style="height: 0.5em;"></tr>
             <tr>
@@ -39,11 +39,6 @@
                 <td>
                     <textarea>Your content here.</textarea></td>
             </tr>
-	    <tr>
-		<td class="field_name"><b>Category: </b></td>
-		<td>
-		    <input type="text" class="input"></input></td>
-	    </tr>
         </table>
         <br />
 	<br />
@@ -57,11 +52,11 @@
         <br />
     </form>
 </article>
-<article id="removePostBox" class="action-box" style="display: none; visibility: hidden;">
+<article id="removePageBox" class="action-box" style="display: none; visibility: hidden;">
     <form>
         <table>
             <tr>
-                <td class="field_name"><b>Post to Remove: </b></td>
+                <td class="field_name"><b>Page to Remove: </b></td>
                 <td>
                     <select class="input">
                         <option value="admin">admin</option>
@@ -79,18 +74,16 @@
         <br />
     </form>
 </article>
-<article id="displayPostsBox" class="action-box" style="display: block;">
+<article id="displayPagesBox" class="action-box" style="display: block;">
     <table>
         <tr class="table-header">
             <td>Title</td>
             <td>Excerpt</td>
-            <td>Category</td>
-	</tr>
+        </tr>
         <tr class="table-row">
-            <td>Sample post</td>
+            <td>Sample page</td>
             <td>An excerpt of up to 50 words...</td>
-            <td>Uncategorized</td>
-	</tr>
+        </tr>
     </table>
 </article>
 </asp:Content>
