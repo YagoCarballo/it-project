@@ -82,12 +82,14 @@
 <article id="displayJobsBox" class="action-box" style="display: block;">
     <table>
         <tr class="table-header">
-            <td>Title</td>
-            <td>Excerpt</td>
+            <td>Job title</td>
+            <td>Job description</td>
+	    <td>Number of vacancies</td>
 	</tr>
         <tr class="table-row">
             <td>Sample job</td>
             <td>Job Description...</td>
+	    <td>3</td>
 	</tr>
     </table>
 </article>
