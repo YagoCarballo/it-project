@@ -93,6 +93,29 @@ function showAddPagesBox() {
         this.changeView(["addPageBox", "removePageBox", "displayPagesBox"], "addPageBox");
 }
 
+
+function showDisplayJobsBox() {
+        this.changeClass("add-job-button", "");
+        this.changeClass("remove-job-button", "");
+        this.changeClass("display-job-button", "selected");
+
+        this.changeView(["addJobBox", "removeJobBox", "displayJobsBox"], "displayJobsBox");
+}
+
+function showRemoveJobBox() {
+        this.changeClass("add-job-button", "");
+        this.changeClass("remove-job-button", "selected");
+        this.changeClass("display-job-button", "");
+        this.changeView(["addJobBox", "removeJobBox", "displayJobsBox"], "removeJobBox");
+}
+
+function showAddJobBox() {
+        this.changeClass("add-job-button", "selected");
+        this.changeClass("remove-job-button", "");
+        this.changeClass("display-job-button", "");
+        this.changeView(["addJobBox", "removeJobBox", "displayJobsBox"], "addJobBox");
+}
+
 function showDisplayEventsBox() {
     this.changeClass("add-event-button", "");
     this.changeClass("remove-event-button", "");
