@@ -4,7 +4,7 @@
     <ul>
         <li><a href="#" id="add-post-button" onclick="showAddPostBox();">Add / Modify Post</a></li>
         <li><a href="#" id="remove-post-button" onclick="showRemovePostBox();">Remove Post</a></li>
-        <li><a href="#" id="display-post-button" onclick="showDisplayPostBox();" class="selected">Display Posts</a></li>
+        <li><a href="#" id="display-post-button" onclick="showDisplayPostsBox();" class="selected">Display Posts</a></li>
     </ul>
 </aside>
 <br />

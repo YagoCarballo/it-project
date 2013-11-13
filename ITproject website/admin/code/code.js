@@ -52,20 +52,43 @@ function showDisplayPostsBox() {
     this.changeClass("remove-post-button", "");
     this.changeClass("display-post-button", "selected");
 
-    this.changeView(["addPostsBox", "removePostsBox", "displayPostsBox", "passwordPostBox"], "displayPostsBox");
+    this.changeView(["addPostBox", "removePostBox", "displayPostsBox"], "displayPostsBox");
 }
 
-function showRemovePostsBox() {
+function showRemovePostBox() {
 	this.changeClass("add-post-button", "");
         this.changeClass("remove-post-button", "selected");
         this.changeClass("display-post-button", "");
-	this.changeView(["addPostsBox", "removePostsBox", "displayPostsBox", "passwordPostBox"], "removePostsBox");
+	this.changeView(["addPostBox", "removePostBox", "displayPostsBox"], "removePostsBox");
 }
 
-function showAddPostsBox() {
+function showAddPostBox() {
 	this.changeClass("add-post-button", "selected");
         this.changeClass("remove-post-button", "");
         this.changeClass("display-post-button", "");
 
-	this.changeView(["addPostsBox", "removePostsBox", "displayPostsBox", "passwordPostBox"], "addPostsBox");
+	this.changeView(["addPostBox", "removePostBox", "displayPostsBox"], "addPostsBox");
+}
+
+function showDisplayPagesBox() {
+    	this.changeClass("add-page-button", "");
+	this.changeClass("remove-page-button", "");
+	this.changeClass("display-page-button", "selected");
+
+        this.changeView(["addPageBox", "removePageBox", "displayPagesBox"], "displayPagesBox");
+}
+
+function showRemovePagesBox() {
+        this.changeClass("add-page-button", "");
+        this.changeClass("remove-page-button", "selected");
+        this.changeClass("display-page-button", "");
+        this.changeView(["addPageBox", "removePageBox", "displayPagesBox"], "removePageBox");
+}
+
+function showAddPagesBox() {
+        this.changeClass("add-page-button", "selected");
+        this.changeClass("remove-page-button", "");
+        this.changeClass("display-page-button", "");
+
+        this.changeView(["addPageBox", "removePageBox", "displayPagesBox"], "addPageBox");
 }
