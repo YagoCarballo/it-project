@@ -98,7 +98,7 @@
                         <li><a runat="server" href="~/Vacancies">Vacancies</a></li>
                         <li><a runat="server" href="~/Guestbook">GuestBook</a></li>
 				        <li><a runat="server" href="~/Contact">Contact</a></li>
-                        <li><a runat="server" href="admin/default.aspx">Login</a></li>
+                        <li><a runat="server" href="admin/login.aspx">Login</a></li>
                     </ul>
                 </div>
             </footer>
