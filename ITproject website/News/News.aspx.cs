@@ -17,9 +17,7 @@ public partial class About_Default : System.Web.UI.Page
         conn.Open();
         DataFactory dataFac = new DataFactory(conn);
 
-        Page page = dataFac.getPage(1);
-
-        title.Text = page.getTitle();
+        List<Post> posts = dataFac.getPosts();
         content.Text = page.getContent();
         author.Text = "by " + page.getUser().getFullName() + " on " + page.getCreated().Date;
 

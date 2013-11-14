@@ -35,7 +35,7 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+	line-height: 1.5em;
 }
 /* end of copied code from site, the role was to reset all the default values set for css*/
 
@@ -49,6 +49,7 @@ body {
 /* Master Page CSS*/
 *{
     font-size:14pt;
+
 }
 h1
 {
@@ -73,6 +74,7 @@ p
         background-color:#fff;
         box-shadow:0px 0px 15px rgba(0,0,0,0.3);
         overflow:hidden;
+        background-image:url(/images/logo.png);
         background-positon:10px 30px;
         background-size:contain;
         background-repeat:no-repeat;
@@ -83,20 +85,16 @@ p
     {
         width:200px;
         height:65px;
-        position:relative;
-
-
-
-        left:0;
+        
     }
     .header_navigation
     {
-        width:85%;
-        display:inline;
+        width:80%;
+      
         position:relative;
-        float:right;
+        
         left:10%;
-        top:-40px;
+        top:20px;
     }
     .header_navigation ul
     {
@@ -166,6 +164,7 @@ p
         width:800px;
         padding:15px;
         font-size:25pt;
+
     }
     .title
     {
@@ -185,6 +184,14 @@ p
     .page_content p 
     {
         padding:20px;
+    }
+    .page_content img
+    {
+        width:100%;
+    }
+    .post_content p
+    {
+       padding:10px;
     }
     .content 
     {
@@ -212,6 +219,10 @@ p
     {
         text-align:center;
     }
+
+
+    /* post css*/
+    
 
 
 /* Front Page */
