@@ -17,37 +17,9 @@
     <![endif]-->
     <asp:ContentPlaceHolder id="head" runat="server">
     </asp:ContentPlaceHolder>
-
+    <link href='http://fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Loading Bootstrap -->
-    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
-
-    <!-- Loading Flat UI -->
-    <link href="css/flat-ui.css" rel="stylesheet">
-
-    <link rel="shortcut icon" href="images/favicon.ico">
-
-    <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
-    <!--[if lt IE 9]>
-      <script src="js/html5shiv.js"></script>
-    <![endif]-->
-    
-    <script src="js/jquery-1.8.3.min.js"></script>
-
-    <script src="js/jquery-ui-1.10.3.custom.min.js"></script>
-    <script src="js/jquery.ui.touch-punch.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/bootstrap-select.js"></script>
-    <script src="js/bootstrap-switch.js"></script>
-    <script src="js/flatui-checkbox.js"></script>
-    <script src="js/flatui-radio.js"></script>
-    <script src="js/jquery.tagsinput.js"></script>
-    <script src="js/jquery.placeholder.js"></script>
-
-        <script src="pixastic.custom.js"></script>
-
-        <script src="script.js"></script>
 
   <script type="text/javascript">
       function resizeText(multiplier) {
@@ -68,24 +40,26 @@
     <div>
 
         <header>
+          
              
-            <nav>
+            <div class ="header_navigation">
                 <ul>
                     <li><a runat="server" href="~/">Home</a></li>
 				    <li><a runat="server" href="About/About.aspx">About</a></li>
                     <li><a runat="server" href="News/News.aspx">News</a></li>
-				    <li><a runat="server" href="~/Activities.aspx">Activities</a></li>
+                    <li><a runat="server" href="~/Activities.aspx">Events</a></li>
+                    <li><a runat="server" href="~/fundraising.aspx">Fundraising</a></li>
+                    <li><a runat="server" href="~/Referrals.aspx">Referrals</a></li>
+                    <li><a runat="server" href="~/people.aspx">People</a></li>
                     <li><a runat="server" href="~/Vacancies">Vacancies</a></li>
-                    <li><a runat="server" href="~/Vacancies">Vacancies</a></li>
-                    <li><a runat="server" href="~/Guest">Guest Book</a></li>
 				    <li><a runat="server" href="Contact/Contact.aspx">Contact</a></li>
                 </ul> 
-
-            </nav>
-            
-            <div class ="loginControls">
-               <a runat="server" href="admin/default.aspx">Login</a>
             </div>
+                
+
+           
+            
+            
         </header>
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
             </asp:ContentPlaceHolder>
@@ -98,10 +72,10 @@
              
                  
             
-           
+           <div class="content_holder">
                 <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
                 </asp:ContentPlaceHolder>
-
+            </div>
             
            
            
@@ -109,9 +83,10 @@
         
          
     </div>
-        <footer>
-                   <img src ="../img/logo_small.jpg" height="40" alt="Mid Lin Logo"/>
+         <footer>
+                   <img src ="/img/logo_small.jpg" height="40" alt="Mid Lin Logo"/>
                    <p>Mid-lin Day Care 2013</p>
+                 <div class ="footer_navigation">
                     <ul>
                         <li><a runat="server" href="~/">Home</a></li>
 				        <li><a runat="server" href="~/About">About</a></li>
@@ -120,16 +95,16 @@
                         <li><a runat="server" href="~/Fundrasing">Fundrasing</a></li>
                         <li><a runat="server" href="~/Links">Links</a></li>
                         <li><a runat="server" href="~/Vacancies">Vacancies</a></li>
-                        <li><a runat="server" href="~/Guestbook">GuestBook</a></li>
 				        <li><a runat="server" href="~/Contact">Contact</a></li>
+                        <li><a runat="server" href="admin/">Login</a></li>
                     </ul>
-                
+                </div>
             </footer>
         </div>
 
         <div class ="fontsize">
-            <img id="plustext" alt="Increase text size" src="../img/sizeup.png" onclick="resizeText(1)" width ="50px" />
-            <img id="minustext" alt="Decrease text size" src="../img/sizedown.png" onclick="resizeText(-1)" width ="50px" />
+            <img id="plustext" alt="Increase text size" src="/img/sizeup.png" onclick="resizeText(1)" width ="50px" />
+            <img id="minustext" alt="Decrease text size" src="/img/sizedown.png" onclick="resizeText(-1)" width ="50px" />
         </div>
 
 
