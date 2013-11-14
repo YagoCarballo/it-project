@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
 
@@ -17,9 +16,7 @@ public class Post
     private string category;
     private DateTime created;
 
-    private SqlConnection db;
-
-	public Post(int id, User user, string title, string content, string category, DateTime created, SqlConnection db)
+	public Post(int id, User user, string title, string content, string category, DateTime created)
 	{
         this.id = id;
         this.user = user;
@@ -27,14 +24,7 @@ public class Post
         this.content = content;
         this.category = category;
         this.created = created;
-        this.db = db;
 	}
-
-
-    public bool modify(string title, string content, string category)
-    {
-        return true;
-    }
 
 
     //Getters

@@ -37,7 +37,7 @@ public class KVStore
         }
 
         //Build query
-        SqlCommand cmd = new SqlCommand("SELECT value FROM MidLin.kvstore WHERE key = @key", db);
+        SqlCommand cmd = new SqlCommand("SELECT value FROM MidLin.kvstore WHERE key = @key LIMIT 1", db);
         cmd.Parameters.AddWithValue("key", key);
 
         using (SqlDataReader rdr = cmd.ExecuteReader())
