@@ -37,7 +37,7 @@
                         </ul>
                         </div>
                     <div id ="carousel_text">
-                        <p>Mids - Lin Day Care Centre for older people is run by staff and volunteers Monday to Friday 
+                        <p>Mid - Lin Day Care Centre for older people is run by staff and volunteers Monday to Friday 
 9.00 am - 5.00 pm. Providing activities, friendship, care and good food.</p>
                     </div>
                 </asp:Panel>
