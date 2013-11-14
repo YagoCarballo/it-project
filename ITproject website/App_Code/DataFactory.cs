@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
+using System.Diagnostics;
 using System.Linq;
 using System.Web;
 
@@ -76,6 +77,7 @@ public class DataFactory
             }
             else
             {
+                rdr.Close();
                 return null;
             }
         }
@@ -223,7 +225,7 @@ public class DataFactory
         if (user != null)
         {
             //Create page object
-            Post post = new Post(id, user, title, content, category, created);
+            Post post = new Post(id, user, title, content, category, created, db);
 
             //Return
             return post;
@@ -376,5 +378,63 @@ public class DataFactory
 
         //Build object and return
         return new Gallery(id, created, createdBy, name, description, images);
+    }
+
+
+    
+    //Get a list of all posts
+    public List<Post> getPosts()
+    {
+        if (db.State != ConnectionState.Open)
+        {
+            try
+            {
+                db.Open();
+            }
+            catch (SqlException ex)
+            {
+                return null;
+            }
+        }
+
+        //Get posts from the database
+        SqlCommand cmd = new SqlCommand("SELECT [id], [user], [category], [content], [created], [title] FROM MidLin.posts ORDER BY created DESC", db);
+
+        List<Post> posts = new List<Post>();
+        List<int> userIds = new List<int>();
+
+        int id;
+        string category, content, title;
+        DateTime created;
+        User user;
+
+        using (SqlDataReader rdr = cmd.ExecuteReader())
+        {
+            if (rdr.HasRows)
+            {
+                while (rdr.Read())
+                {
+                    id = rdr.GetInt32(0);
+                    userIds.Add(rdr.GetInt32(1));
+                    category = rdr.GetString(2);
+                    content = rdr.GetString(3);
+                    created = rdr.GetDateTime(4);
+                    title = rdr.GetString(5);
+
+                    //Add to list
+                    posts.Add(new Post(id, null, title, content, category, created, db));
+                }
+            }
+        }
+
+        //Regenerate with actual users
+        List<Post> posts2 = new List<Post>();
+        for (int i = 0; i < posts.Count; i++)
+        {
+            posts2.Add(new Post(posts[i].getId(), getUser(userIds[i]), posts[i].getTitle(), posts[i].getContent(), posts[i].getCategory(), posts[i].getCreated(), db));
+        }
+
+        //Return our list
+        return posts2;
     }
 }
