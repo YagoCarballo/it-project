@@ -1,4 +1,4 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="AdminMasterPage.master.cs" Inherits="admin_MasterPage" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="AdminMasterPage.master.cs" Inherits="AdminMasterPage" %>
 
 <!DOCTYPE HTML>
 <html>
@@ -9,10 +9,18 @@
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="./style/admin.css">
 	<script src="./code/code.js" type="text/javascript"> </script>
-	<script src="//tinymce.cachefly.net/4.0/tinymce.min.js"></script>
-	<script>
-		tinymce.init({selector: 'textarea'});
-	</script>
+	<script src="./code/tinymce/tinymce.min.js"></script>
+	<script type="text/javascript">
+	    tinymce.init({
+	        selector: "textarea",
+	        plugins: [
+                "advlist autolink lists link image charmap print preview anchor",
+                "searchreplace visualblocks code fullscreen",
+                "insertdatetime media table contextmenu paste"
+	        ],
+	        toolbar: "insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image"
+	    });
+</script>
 </head>
 <body>
 	<div id="wrapper" runat="server">
@@ -29,6 +37,8 @@
 				<!-- <li><a href="#">Customers</a></li> -->
 			</ul>
 	    </aside>
+        <asp:ContentPlaceHolder ID="ErrorContent" runat="server">
+        </asp:ContentPlaceHolder>
 		<section id="content">
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
             </asp:ContentPlaceHolder>

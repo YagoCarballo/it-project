@@ -1,16 +1,26 @@
 <%@ Page Title="" Language="C#" MasterPageFile="~/admin/AdminMasterPage.master" AutoEventWireup="true" CodeFile="Posts.aspx.cs" Inherits="admin_Default" %>
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="ajaxToolkit" %>
+<%@ MasterType VirtualPath="~/admin/AdminMasterPage.master" %>
+
+<asp:Content ContentPlaceHolderID="ErrorContent" Runat="Server">
+    <section id="error_box" class="error_box" Runat="Server">
+            <asp:label id="error_message" class="error_message" Runat="Server">Unknown Error</asp:label>
+	</section>
+</asp:Content>
+
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" Runat="Server">
 <aside id="actions-menu">
     <ul>
-        <li><a href="#" id="add-post-button" onclick="showAddPostBox();">Add / Modify Post</a></li>
-        <li><a href="#" id="remove-post-button" onclick="showRemovePostBox();">Remove Post</a></li>
-        <li><a href="#" id="display-post-button" onclick="showDisplayPostsBox();" class="selected">Display Posts</a></li>
+        <li><a href="#addPostBox" id="add-post-button" onclick="showAddPostBox();">Add / Modify Post</a></li>
+        <li><a href="#removePostBox" id="remove-post-button" onclick="showRemovePostBox();">Remove Post</a></li>
+        <li><a href="#displayPostsBox" id="display-post-button" onclick="showDisplayPostsBox();" class="selected">Display Posts</a></li>
     </ul>
 </aside>
 <br />
 
 <article id="addPostBox" class="action-box" style="display: none; visibility: hidden;">
-    <form>
+    <form runat="server">
+        <asp:ScriptManager ID="ScriptManager1" runat="server" />
         <table>
             <tr>
                 <td colspan="2" style="text-align: left; color: rgb(6, 90, 218); font-weight: 700;">Select the Post to Modify</td>
@@ -44,10 +54,24 @@
 		<td>
 		    <input type="text" class="input"></input></td>
 	    </tr>
+        <tr>
+		    <td class="field_name"><b>Upload Image: </b></td>
+		    <td>
+		        <asp:UpdatePanel ID="UpdatePanel" runat="server" UpdateMode="conditional" />       
+                     <ContentTemplate>
+                        <asp:FileUpload ID="FileUpload" runat="server" />
+                        <asp:Button ID="btnUpload" runat="server" Text="Upload" OnClick="btnUpload_Click" />
+                     </ContentTemplate>
+                     <Triggers>
+                        <asp:PostBackTrigger ControlID="btnUpload" />
+                     </Triggers>
+                  </asp:UpdatePanel>
+		    </td>
+	        </tr>
         </table>
         <br />
 	<br />
-        <aside id="actions-menu">
+        <aside id="actions-menu" style="float:right;">
             <ul>
                 <li><a href="#">Publish</a></li>
 		<li><a href="#">Save as draft</a></li>
@@ -70,7 +94,7 @@
             </tr>
         </table>
         <br />
-        <aside id="actions-menu">
+        <aside id="actions-menu" style="float:right;">
             <ul>
                 <li><a href="#">Remove</a></li>
                 <li><a href="#">Cancel</a></li>

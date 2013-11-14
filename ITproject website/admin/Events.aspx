@@ -52,7 +52,7 @@
         </table>
         <br />
 	<br />
-        <aside id="actions-menu">
+        <aside id="actions-menu" style="float:right;">
             <ul>
                 <li><a href="#">Publish</a></li>
                 <li><a href="#">Cancel</a></li>
@@ -74,7 +74,7 @@
             </tr>
         </table>
         <br />
-        <aside id="actions-menu">
+        <aside id="actions-menu" style="float:right;">
             <ul>
                 <li><a href="#">Remove</a></li>
                 <li><a href="#">Cancel</a></li>
