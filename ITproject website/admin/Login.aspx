@@ -1,4 +1,5 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Login.aspx.cs" Inherits="admin_Default2" %>
+<%@ MasterType VirtualPath="~/admin/AdminMasterPage.master" %>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -20,7 +21,7 @@
 			<label for="password">Password</label><br /><br />
 			<input type="password" id="password"></input>
 			
-			<a href="#" id="loginBtn">Log In</a>
+			<a href="#" id="loginBtn" runat="server" onclick="LogIn_Btn_Click">Log In</a>
 		</form>
 	</article>
 </body>

@@ -8,12 +8,13 @@ using System.Web.UI.WebControls;
 public partial class AdminMasterPage : System.Web.UI.MasterPage
 {
     private bool showError = false;
-    bool loggedIn = true;
+    bool loggedIn = false;
     protected void Page_Init(object sender, EventArgs e)
     {
         this.ShowError = false;
 
-        if (!loggedIn) {
+        //if (!loggedIn) {
+        if (((bool) Session["test"]) == true) {
             Response.Redirect("~/admin/Login.aspx", true);
         }
     }
@@ -24,5 +25,7 @@ public partial class AdminMasterPage : System.Web.UI.MasterPage
 
 
 
-    public bool ShowError { get { return showError; } set { showError = value; ErrorContent.Visible = showError; } } 
+    public bool ShowError { get { return showError; } set { showError = value; ErrorContent.Visible = showError; } }
+
+    public bool LoggedIn { get { return loggedIn; } set { loggedIn = value; ErrorContent.Visible = loggedIn; } } 
 }
